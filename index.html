@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waypoint</title>
+   
+        <link rel="stylesheet" href="styles.css">
+     <link rel = "icon" href =images/favicon_wp.png>
+     <link href="icons/css/fontawesome.css" rel="stylesheet">
+    <link href="icons/css/brands.css" rel="stylesheet">
+    <link href="icons/css/solid.css" rel="stylesheet">
+
+    </head>
+    
+    <body onload="showBrowser();getBG();">
+        
+        <div id="lg_container">
+            
+        <div id="head">
+        <div id="color_btn" onclick="toggleColor();"><i class="fas fa-palette" id="paint"></i></div>
+            <div id="color_block">
+            <div class="color" onclick="changeOne();closeColor();" id="one"></div>
+            <div class="color" onclick="changeTwo();closeColor();" id="two"></div>
+            <div class="color" onclick="changeThree();closeColor();" id="three"></div>
+            <div class="color" onclick="changeFour();closeColor();" id="four"></div>
+            </div>
+        </div>  
+            
+            <div id="content">
+            <div id="logo"></div>
+                
+           <button id="search_btn" onclick="redirectSearch();"><i class="fas fa-search" id="glass"></i></button>
+                <input id="search_bar">
+               
+       
+            
+            <div id="show">Current Browser: Google</div>
+            <div id="edit" onclick="toggleList();"><i class="fas fa-cog" id="gear"></i>Edit</div>
+            </div>
+        </div>
+        
+<div class="container" id="popup">
+	
+  <ul>
+  <li>
+    <input type="radio" id="a" value="Google" name="browser">
+   <label for="a">Google</label>
+    
+    <div class="check"></div>
+  </li>
+  
+  <li>
+    <input type="radio" value="Bing" id="b" name="browser">
+   <label for="b">Bing</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+  
+  <li>
+    <input type="radio" value="Yahoo" id="c" name="browser">
+   <label for="c">Yahoo</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+    
+     <li>
+    <input type="radio" value="DuckDuckGo" id="d" name="browser">
+   <label for="d">DuckDuckGo</label>
+    
+    <div class="check"><div class="inside"></div></div>
+  </li>
+    
+</ul>
+  
+  <div id="button" onclick="toggleList();saveBrowser();showBrowser();">Submit</div>
+  
+</div>
+        
+    
+    </body>
+    
+  <script src="index.js"></script>
+    
+ </html>
